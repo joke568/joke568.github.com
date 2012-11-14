@@ -4,28 +4,6 @@ layout: default
 <section class="post">
  {{ content }}
 </section>
-<span class="author">
-	<a href="/">{{ author }}</a>
-</span>
-<span class="time">
-  /
-  <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
-</span>
-<br />
-<span class="categories">
-	in categories
-	{% for tag in page.categories %}
-    <a href="/" title="{{ categories }}">#{{ categories }}</a>
-    {% endfor %}
-</span>
-
-
-<span class="tags">
-  tagged with 
-  {% for tag in page.tags %}
-  <a href="/" title="{{ tag }}">#{{ tag }}</a>
-  {% endfor %} 
-</span>
 
 <section class="comment">
 <div id="disqus_thread"></div>
