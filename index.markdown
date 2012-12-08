@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<section class="post">
 <ul class="listing">
 {% for post in site.posts %}
 {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
@@ -15,4 +14,3 @@ layout: default
   </li>
 {% endfor %}
 </ul>
-</section>
