@@ -2,7 +2,7 @@
 layout: post
 title: 'git push错误解决方法'
 ---
-刚提交了一个dede的博客，提示了这个错误
+刚提交了一个[dede5.7的多图上传功能](http://joke568.github.com/2012/12/13/dede-pic-more/)的这篇文章，提示了这个错误
 
 ![](/images/2012-12-13-github-push-error.png)
 
