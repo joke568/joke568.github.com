@@ -1,5 +1,5 @@
 ---
-title: 'kloxo不能登录ftp解决方法'
+title: kloxo不能登录ftp解决方法
 layout: post
 ---
 查看21端口是否开启
