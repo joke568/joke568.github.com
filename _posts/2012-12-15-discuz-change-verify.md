@@ -8,12 +8,12 @@ title: 'discuz的认证显示设置'
 
 添加的代码如下:
 
-			<!--{if $_G['setting']['verify']}-->
-				<!--{loop $_G['setting']['verify'] $vid $verify}-->
-						<!--{if $verify['available'] && $post['verify'.$vid] == 1 && $vid == 2}-->
-						<li><strong>认证:</strong><span>$verify[title]</span></li>
-        				<!--{/if}-->
-    			<!--{/loop}-->
-			<!--{/if}-->
+		<!--{if $_G['setting']['verify']}-->
+			<!--{loop $_G['setting']['verify'] $vid $verify}-->
+					<!--{if $verify['available'] && $post['verify'.$vid] == 1 && $vid == 2}-->
+					<li><strong>认证:</strong><span>$verify[title]</span></li>
+					<!--{/if}-->
+			<!--{/loop}-->
+		<!--{/if}-->
 
 其中$vid==2是显示认证的ID，可以根据需求进行更改。
