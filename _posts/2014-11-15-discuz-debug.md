@@ -2,7 +2,7 @@
 layout: post
 title: 'discuz开启调试模式'
 ---
-！[](/images/2014-11-15.jpg)
+![](/images/2014-11-15.jpg)
 
 
 1,在./source/function/文件夹下面添加这个文件[function_debug.php](/files/function_debug.rar)(点击文件名下载)
