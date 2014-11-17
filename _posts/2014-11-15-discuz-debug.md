@@ -15,3 +15,6 @@ $_config['debug'] = 'debug';
 3,在访问的页面后面输入?debug=debug就可以看到调试模式了。
 
 http://localhost/portal.php?debug=debug
+
+
+注意：dz3.1,3.2测试可用。其他版本没有测试。
