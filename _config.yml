@@ -2,4 +2,4 @@ markdown: rdiscount
 highlighter: pygments
 permalink: /:year/:month/:day/:title
 name: phper
-markdown: rdiscount
+markdown: redcarpet
