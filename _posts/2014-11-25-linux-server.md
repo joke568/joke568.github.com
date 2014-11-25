@@ -100,4 +100,5 @@ ftp:
 经常使用的两个liunx的命令
 
 chmod -R 777 www         //遍历更改权限是777
+
 chown -R www www         //遍历更改用户组为www www文件夹
