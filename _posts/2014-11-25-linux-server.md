@@ -56,41 +56,33 @@ apache 配置文件在/alidata/server/httpd/conf
 
 apache虚拟主机添加 你可以修改/alidata/server/httpd/conf/vhosts/phpwind.conf
 
- 
 
 各个服务操作命令汇总：
 
- 
 
 nginx：
 
 /etc/init.d/nginx start/stop/restart/reload)
 
- 
 
 apache:
 
 /etc/init.d/httpd start/stop/restart/...
 
- 
 
 mysql:
 
 /etc/init.d/mysqld  start/stop/restart/...
 
- 
 
 php-fpm:
 
 /etc/init.d/php-fpm  start/stop/restart/...
 
- 
 
 ftp:
 
 /etc/init.d/vsftpd  start/stop/restart/...
-
- 
 
 比如启动nginx：
 
