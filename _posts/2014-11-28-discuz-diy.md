@@ -83,7 +83,7 @@ runslideshow();
 
 2,图片滚动带左右控制
 
-![](/images/20141128a.jpg)
+![](/images/20141128b.jpg)
 
 ```html
 <style type="text/css" media="screen">
@@ -134,6 +134,6 @@ runslideshow();
 runslideshow();
 </script>
 ```
-这个是素材，[dhd.png](/files/index.png)
+这个是素材，[index.png](/files/index.png)
 
 注意:./template/20141126/images/这个是图片的路径。图片的缩略图设置大小是96*128
