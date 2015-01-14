@@ -9,7 +9,7 @@ title: 'linux的目录挂载（转载）'
 
 基于这种情况,只能通过跳板的方式把原来的/home数据复制到新的/home分区下了 ,如何添加新硬盘,请查找相关资料
 
-'''linux
+```linux
 
 mkdir /new  ###跳板目录
 
@@ -27,4 +27,4 @@ umount /new ###解除挂载
 rm -rf /new ###删除跳板目录
 
 echo  "/dev/sdb1  /home    ext3    defaults    0 0" >> /etc/fstab ###开机启动挂载目录
-'''
+```

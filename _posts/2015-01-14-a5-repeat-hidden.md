@@ -6,21 +6,21 @@ title: 'A5分类信息回复可见修改'
 
 查找
 
-'''php
+```php
 $message = preg_replace("/\[hide\](.*?)\[\/hide\]/is", tpl_hide_reply_hidden(), $message);
-'''
+```
 
 更改为
 
-'''php
+```php
 $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $message);
-'''
+```
 
 2，.\source\include\post\post_newthread.php
 
 查找
 
-'''php
+```php
 	$params = array(
 		'subject' => $subject,
 		'message' => $message,
@@ -28,11 +28,11 @@ $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $
 		'sortid' => $sortid,
 		'special' => $special,
 	);
-'''
+```
 
 更改为
 
-'''php
+```php
 	$params = array(
 		'subject' => $subject,
 		'message' => trim("[hide]".$message."[/hide]"),
@@ -40,19 +40,19 @@ $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $
 		'sortid' => $sortid,
 		'special' => $special,
 	);
-'''
+```
 
 3，.\source\function\function_threadsort.php
 
 查找
 
-'''php
+```php
 	return $threadsortshow;
-'''
+```
 
 更改为
 
-'''php
+```php
 	if($_G['uid']) {
 		$authoronline = C::t('forum_post')->fetch_pid_by_tid_authorid($_G['tid'], $_G['uid']);
 	}
@@ -61,13 +61,13 @@ $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $
 	if($authoronline){
 		return $threadsortshow;
 	}
-'''
+```
 
 4， .\template\default\forum\viewthread_node_body.htm
 
 查找
 
-'''php
+```html
 		<!--{if $threadsort && $threadsortshow}-->
 			<!--{if $threadsortshow['typetemplate']}-->
 				$threadsortshow[typetemplate]
@@ -93,11 +93,11 @@ $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $
 				</div>
 			<!--{/if}-->
 		<!--{/if}-->
-'''
+```
 
 更改为
 
-'''php
+```html
 		<!--{if $threadsort && $threadsortshow}-->
 			<!--{if $threadsortshow['optionlist']}-->
 				<div class="typeoption">
@@ -123,5 +123,5 @@ $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $
 		<!--{else}-->
 			<div class="showhide"><h4>本贴联系方式隐藏,回复后可见</h4></div>	
 		<!--{/if}-->
-'''
+```
 

@@ -5,15 +5,15 @@ title: 'linux搬家笔记使用wget命令'
 一，数据库
 先备份数据库
 
-'''mysql
+```mysql
 mysql -uroot -p123456 test > test.sql
-'''
+```
 
 二，从目标站下载文件
 
-'''linux
+```linux
 wget -nH -m --ftp-user=your_username --ftp-password=your_password ftp://your_ftp_host/*
-'''
+```
 
 说明
 
@@ -27,6 +27,6 @@ ftp://*.*.*.*/*：FTP主机地址。最后可以跟目录名来下载指定目�
 
 例：下载test目录下的所有文件
 
-'''linux
+```linux
 wget -nH -m --ftp-user=root --ftp-password=123456 ftp://192.168.1.1/test
-'''
+```
