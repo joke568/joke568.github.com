@@ -6,13 +6,13 @@ title: 'A5分类信息回复可见修改'
 
 查找
 
-'''html
+'''php
 $message = preg_replace("/\[hide\](.*?)\[\/hide\]/is", tpl_hide_reply_hidden(), $message);
 '''
 
 更改为
 
-'''html
+'''php
 $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $message);
 '''
 
@@ -20,7 +20,7 @@ $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $
 
 查找
 
-'''html
+'''php
 	$params = array(
 		'subject' => $subject,
 		'message' => $message,
@@ -32,7 +32,7 @@ $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $
 
 更改为
 
-'''html
+'''php
 	$params = array(
 		'subject' => $subject,
 		'message' => trim("[hide]".$message."[/hide]"),
@@ -46,13 +46,13 @@ $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $
 
 查找
 
-'''html
+'''php
 	return $threadsortshow;
 '''
 
 更改为
 
-'''html
+'''php
 	if($_G['uid']) {
 		$authoronline = C::t('forum_post')->fetch_pid_by_tid_authorid($_G['tid'], $_G['uid']);
 	}
@@ -67,7 +67,7 @@ $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $
 
 查找
 
-'''html
+'''php
 		<!--{if $threadsort && $threadsortshow}-->
 			<!--{if $threadsortshow['typetemplate']}-->
 				$threadsortshow[typetemplate]
@@ -97,7 +97,7 @@ $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $
 
 更改为
 
-'''html
+'''php
 		<!--{if $threadsort && $threadsortshow}-->
 			<!--{if $threadsortshow['optionlist']}-->
 				<div class="typeoption">
