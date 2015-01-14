@@ -10,7 +10,6 @@ title: 'linux的目录挂载（转载）'
 基于这种情况,只能通过跳板的方式把原来的/home数据复制到新的/home分区下了 ,如何添加新硬盘,请查找相关资料
 
 ```linux
-
 mkdir /new  ###跳板目录
 
 mount /dev/sdb1 /new  ###首先挂载跳板目录
