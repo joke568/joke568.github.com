@@ -124,4 +124,3 @@ $message = preg_replace("/\[hide\]\s*(.*?)\s*\[\/hide\]/is", tpl_hide_reply(), $
 			<div class="showhide"><h4>本贴联系方式隐藏,回复后可见</h4></div>	
 		<!--{/if}-->
 ```
-
